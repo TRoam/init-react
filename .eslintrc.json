@@ -14,6 +14,7 @@
     "no-use-before-define": 0,
     "no-param-reassign": 1,
     "jsx-quotes": ["error", "prefer-single"],
-    "global-require": 0
+    "global-require": 0,
+    "no-shadow": 0
   }
 }
