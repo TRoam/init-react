@@ -11,6 +11,7 @@
     "babel-eslint": "9.0.0",
     "babel-jest": "23.6.0",
     "babel-loader": "8.0.4",
+    "babel-plugin-import": "^1.11.0",
     "babel-plugin-named-asset-import": "^0.2.3",
     "babel-preset-react-app": "^6.1.0",
     "bfj": "6.1.1",
@@ -59,7 +60,7 @@
   },
   "eslintConfig": {
     "extends": [
-      ".eslintrc.json",
+      ".eslintrc.js",
       "react-app"
     ]
   },
@@ -95,6 +96,7 @@
     ],
     "moduleNameMapper": {
       "^react-native$": "react-native-web",
+      "^~$": "<rootDir>/src$1",
       "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
     },
     "moduleFileExtensions": [
@@ -119,13 +121,6 @@
         "import",
         {
           "libraryName": "@enos/dpl",
-          "style": "css"
-        }
-      ],
-      [
-        "import",
-        {
-          "libraryName": "antd-mobile",
           "style": "css"
         }
       ]
