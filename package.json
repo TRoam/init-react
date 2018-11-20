@@ -5,6 +5,7 @@
   "homepage": "",
   "dependencies": {
     "@babel/core": "7.1.0",
+    "@enos/dpl": "^0.3.35",
     "@svgr/webpack": "2.4.1",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
@@ -112,6 +113,22 @@
   "babel": {
     "presets": [
       "react-app"
+    ],
+    "plugins": [
+      [
+        "import",
+        {
+          "libraryName": "@enos/dpl",
+          "style": "css"
+        }
+      ],
+      [
+        "import",
+        {
+          "libraryName": "antd-mobile",
+          "style": "css"
+        }
+      ]
     ]
   },
   "devDependencies": {
